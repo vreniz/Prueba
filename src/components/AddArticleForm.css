@@ -1,0 +1,55 @@
+
+.form-container {
+    display: flex;
+    justify-content: center; /* Centra el formulario horizontalmente */
+    align-items: center; /* Centra el formulario verticalmente */
+    min-height: 100vh; /* Asegura que el contenedor tenga al menos la altura de la ventana */
+    width: 100vw; /* Asegura que el contenedor tenga al menos el ancho de la ventana */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+    padding: 40px; /* Espacio interior para el formulario */
+    border-radius: 4px; /* Bordes redondeados ligeramente */
+    width: 50%; /* Ancho del formulario al 50% del contenedor */
+    max-width: 500px; /* Ancho máximo del formulario */
+  }
+  
+  form label, form input[type="text"], form input[type="file"], form textarea, form button {
+    width: 100%; /* Los elementos ocupan el 100% del ancho del formulario */
+    margin-bottom: 10px; /* Espacio entre elementos */
+  }
+  
+  form input[type="text"], form input[type="file"], form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    padding: 15px 20px;
+    background-color: #3498db; /* Color azul para el botón */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Ajustes para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    form {
+      width: 80%; /* El formulario ocupa el 80% del ancho del contenedor en pantallas pequeñas */
+    }
+  }
+  
+  .form-title {
+    font-size: 24px;
+    color: #333;
+    text-align: center; /* Alinea el título al centro */
+    width: 100%; /* El título ocupa el 100% del ancho del formulario */
+    margin-bottom: 20px;
+  }
+  

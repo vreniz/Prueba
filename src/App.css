@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-container {
+  flex: 1;
+  width: 100%;
+  margin-top: 100px;
+  overflow-y: auto;
+}
+
+.article-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.article-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  max-width: 200px;
+}
+
+.article-item img {
+  width: 100%;
+  height: auto;
+}
+
+.message {
+  margin-bottom: 20px;
+  background-color: #3498db;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.message p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+/* Media Query para pantallas más pequeñas (ajusta según tus necesidades) */
+@media screen and (max-width: 768px) {
+  .content-container {
+    padding: 10px;
+  }
+
+  .message {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+/*aqui emepece a editar*/
+.article-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  width: 200px; /* Ajusta el ancho según el diseño */
+  background-color: #fff; /* Fondo blanco para las tarjetas */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+  border-radius: 4px; /* Bordes redondeados */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.article-title {
+  font-size: 1rem; /* Tamaño de fuente para el título */
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+.article-description {
+  font-size: 0.9rem;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0.5rem 0;
+}
+
+.article-price {
+  color: #1a1a1a;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.article-category {
+  background-color: #eee;
+  border-radius: 2px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.seller-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.seller-image {
+  width: 20px; 
+  height: 20px;
+  border-radius: 50%;
+}
+
+.seller-name {
+  font-size: 0.8rem;
+}
+
+.article-rating {
+  color: #ffd700; /* Color dorado para las estrellas */
+  font-size: 0.9rem; /* Tamaño de las estrellas */
+}
+
+/* ...otros estilos... */
+
+.article-store {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Asegúrate de que el contenedor tenga el ancho completo */
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.article-price {
+  color: #1a1a1a;
+  font-weight: bold;
+  /* margin-bottom: 0.5rem; Quitar si estaba previamente para alinear con el nombre de la tienda */
+}
+
+.store-name {
+  font-size: 0.9rem;
+  color: #009688; /* Color teal  */
+}
+
+/* ...otros estilos... */
+/* ...otros estilos... */
+
+.seller-info {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Aumenta el espacio entre la imagen y el texto si es necesario */
+}
+
+.seller-info .user-image {
+  width: 20px; /* Ajusta el tamaño de la imagen para que sea más grande */
+  height: 20xpx; /* Asegúrate de que el ancho y el alto sean iguales para mantener la imagen circular */
+  border-radius: 50%; /* Hace que la imagen sea circular */
+  object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+  margin-right: 8px; /* Añade un margen a la derecha de la imagen */
+}
+
+.user-name {
+  font-size: 0.9rem; /* Ajusta el tamaño de la fuente según sea necesario */
+  font-weight: bold; /* Opcional: si deseas que el nombre sea en negrita */
+  margin: 0; /* Elimina cualquier margen por defecto */
+  display: flex;
+  align-items: center; /* Centra el texto verticalmente con respecto a la imagen */
+}
+
+.article-rating {
+  margin-left: 8px; /* Añade un margen a la izquierda de las estrellas */
+}
+
+/* ...otros estilos... */
+
+

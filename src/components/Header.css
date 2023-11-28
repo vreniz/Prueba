@@ -1,0 +1,109 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 97.5%;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.admin-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 250px;
+  padding: 8px;
+  border-radius: 10px;
+  margin-right: 8px;
+}
+
+.search-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+/* Estilos para dispositivos más pequeños (responsive) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-bar {
+    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+  }
+
+  .nav-links {
+    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+  }
+
+  .nav-links li {
+    margin-right: 0;
+    margin-bottom: 5px; /* Ajusta el margen inferior según sea necesario */
+  }
+}
+
+.add-button{
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.user-icon-container {
+  display: flex; /* Usar flexbox para la alineación */
+  align-items: center; /* Alinear verticalmente el ícono y el texto */
+  position: absolute; /* Posicionamiento absoluto dentro de la barra de navegación */
+  top: 28px; /* Ajustar según sea necesario */
+  right: calc(100% - 250px); /* Ajustar según sea necesario */
+  gap: 8px; /* Espacio entre el ícono y el texto */
+}
+
+.user-icon {
+  width: 35px; /* Ancho del ícono */
+  height: 35px; /* Altura del ícono */
+}
+
+.seller-text {
+  color: white; /* Texto en blanco */
+  font-weight: bold; /* Texto en negrita */
+  
+}
